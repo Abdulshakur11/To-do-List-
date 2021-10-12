@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  background-color: #333;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: rgb(72, 82, 72);
+}
+
+.wrapper__title {
+  width: 100%;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-js {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.unshift-btn {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.result-list {
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  overflow: auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.result-text {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+}
+
+.unshift-btn-label {
+  margin-left: 10px;
+  color: #fff;
+}
