@@ -6,6 +6,7 @@ let elResultList = $_(".result-list");
 
 let arrayList = [];
 
+// =================== FUNCTION =================
 
 elForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
@@ -25,10 +26,11 @@ elForm.addEventListener("submit", (evt) => {
 
 let renderList = () => {
   elResultList.innerHTML = "";
+
   arrayList.forEach((item) => {
-    var newLi = createElement("li", "item");
-    var newLabel = createElement("label", "form-check-label result-text");
-    var newCheckBox = createElement("input", "form-check-input");
+    var newLi = createElement("li", "item");// CREATED ELEMENTS IN JS
+    var newLabel = createElement("label", "form-check-label result-text");// CREATED ELEMENTS IN JS
+    var newCheckBox = createElement("input", "form-check-input");// CREATED ELEMENTS IN JS
     newCheckBox.type = "checkbox";
     newLabel.textContent = item;
     newCheckBox.id = item;
@@ -37,24 +39,15 @@ let renderList = () => {
     elResultList.appendChild(newLi);
     newLi.appendChild(newCheckBox);
     newLi.appendChild(newLabel);
+
+    // ============ FUNCTION TO REMOVE ITEMS ==============
     newCheckBox.addEventListener("click", () => {
         arrayList.splice((this.value), 1);
         renderList();
       });
+
     });
   }
   
-  
-  
-  // let checkInput = (item) => {
-  //   newCheckBox.addEventListener("click", () => {
-  //     if (newCheckBox.checked) {
-  //       item.style.textDecoration = "line-through"
-  //     } else {
-  //       item.style.textDecoration = "none"
-  //     }
-  //   })
-  // }
-  // checkInput()
 
 
